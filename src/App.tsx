@@ -107,7 +107,7 @@ function App() {
                   <img src="https://cdn.modrinth.com/data/iUkzQgoX/d7bb37032d83bca73474c320954ce3c2d7b48333_96.webp" alt="SpigBan" style={{width: '48px', height: '48px', borderRadius: '6px'}}/>
                   <div className="specimen-tag">SPEC&#8209;01 · FEATURED</div>
                 </div>
-                <div className="status"><span className="pip"></span> v1.0.0 released</div>
+                <div className="status"><span className="pip"></span> v2.0.2 released</div>
                 <div className="meta-row">
                   <span className="k">Platform</span>
                   <span className="v">Spigot / Paper 1.21.x</span>
