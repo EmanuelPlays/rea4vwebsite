@@ -360,7 +360,7 @@ hr.rule{ border:none; border-top:1px solid var(--card-line); margin-block:0; }
 
 .log-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:22px; margin-top:22px; }
 .log-card{
-  border:1px solid var(--card-line); background:var(--card); padding:30px; display:flex; flex-direction: column; gap:16px;
+  border:1px solid var(--card-line); background:var(--card); padding:30px; display:flex; flex-direction:column; gap:16px;
   transition:border-color .3s, transform .3s;
 }
 .log-card:hover{ border-color:var(--ink-faint); transform:translateY(-4px); }
@@ -559,10 +559,6 @@ footer{ padding:44px var(--edge) 40px; }
             </div>
           </div>
           <div class="principle">
-            <span class="num mono">03</span>
-            <div>
-              <h4>Documentation first</h4>
-              <p>Every ship gets a changelog, a readme, and inline comments — no mystery meat, no hidden traps.</p>
             </div>
           </div>
         </div>
@@ -591,7 +587,7 @@ footer{ padding:44px var(--edge) 40px; }
           <img src="https://cdn.modrinth.com/data/iUkzQgoX/d7bb37032d83bca73474c320954ce3c2d7b48333_96.webp" alt="SpigBan" style="width:48px; height:48px; border-radius:6px;">
           <div class="specimen-tag">SPEC&#8209;01 · FEATURED</div>
         </div>
-        <div class="status"><span class="pip"></span> v2.0.0 released!!</div>
+        <div class="status"><span class="pip"></span> v1.0.0 released</div>
         <div class="meta-row">
           <span class="k">Platform</span>
           <span class="v">Spigot / Paper 1.21.x</span>
@@ -620,7 +616,7 @@ footer{ padding:44px var(--edge) 40px; }
         <div class="feature-tags">
           <span>Ban / Temp-ban / IP-ban</span>
           <span>Mute / Temp-mute</span>
-          <span>Warn & case viewer</span>
+          <span>Warn &amp; case viewer</span>
           <span>LuckPerms integration</span>
           <span>Configurable screens</span>
         </div>
@@ -743,7 +739,7 @@ footer{ padding:44px var(--edge) 40px; }
   <footer>
     <div class="footer-row">
       <span>&copy; <span id="year"></span> REA4V&#8209;Lab</span>
-      <span class="footer-clock"><span class="pip" style="animation:none;"></span> client uptime <span id="clock">00:00:00</span></span>
+      <span class="footer-clock"><span class="pip" style="animation:none;"></span> uptime <span id="clock">00:00:00</span></span>
       <a href="#top" class="back-top">
         Back to top
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 12V4M4 8l4-4 4 4"/></svg>
@@ -751,10 +747,6 @@ footer{ padding:44px var(--edge) 40px; }
     </div>
   </footer>
 </section>
-
-<!-- React/Vue root divs -->
-<div id="react-root"></div>
-<div id="vue-root"></div>
 
 <script>
 (function(){
@@ -988,7 +980,5 @@ footer{ padding:44px var(--edge) 40px; }
   /* ---------- mobile nav: simple anchor-close (links already scroll) ---------- */
 })();
 </script>
-<!-- Vite will inject the React and Vue bundles here -->
-<script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
