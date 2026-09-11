@@ -176,6 +176,11 @@ button{ font:inherit; color:inherit; background:none; border:none; }
   background:transparent; transition:all .25s;
 }
 .nav-cta:hover{ background:var(--accent); color:var(--bg); box-shadow:0 12px 28px rgba(59,130,246,.28); }
+.nav-actions{ display:flex; align-items:center; gap:12px; }
+.nav-kofi{ border-color:#72a4f2; }
+.nav-kofi:hover{ background:#72a4f2; box-shadow:0 12px 28px rgba(114,164,242,.28); }
+.nav-cta svg, .nav-cta img{ width:16px; height:16px; flex:none; }
+.nav-cta img{ object-fit:contain; }
 .nav-toggle{ display:none; }
 
 .accessibility-panel{
@@ -450,10 +455,16 @@ footer{ padding:44px var(--edge) 40px; }
     <a href="#focus">Focus</a>
     <a href="#contact">Contact</a>
   </div>
-  <a class="nav-cta" href="https://github.com/REA4V-Lab" target="_blank" rel="noopener">
-    <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.64 0 8.13c0 3.6 2.29 6.65 5.47 7.73.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.5-2.69-.96-.09-.23-.48-.96-.82-1.15-.28-.15-.68-.53-.01-.54.63-.01 1.08.59 1.23.83.72 1.23 1.87.88 2.33.67.07-.53.28-.88.51-1.08-1.78-.2-3.64-.91-3.64-4.02 0-.89.31-1.61.82-2.18-.08-.2-.36-1.03.08-2.15 0 0 .67-.22 2.2.83a7.4 7.4 0 0 1 4 0c1.53-1.06 2.2-.83 2.2-.83.44 1.12.16 1.95.08 2.15.51.57.82 1.28.82 2.18 0 3.12-1.87 3.81-3.65 4.02.29.25.54.75.54 1.51 0 1.09-.01 1.97-.01 2.24 0 .21.15.48.55.39A8.14 8.14 0 0 0 16 8.13C16 3.64 12.42 0 8 0Z"/></svg>
-    GitHub
-  </a>
+  <div class="nav-actions">
+    <a class="nav-cta nav-kofi" href="https://ko-fi.com/F1F21LLGU8" target="_blank" rel="noopener" aria-label="Support me on Ko-fi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M16 10h2a3 3 0 0 1 0 6h-2M8 4c0 1 1 1 1 2M12 4c0 1 1 1 1 2"/></svg>
+      Ko-fi
+    </a>
+    <a class="nav-cta" href="https://github.com/REA4V-Lab" target="_blank" rel="noopener">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" aria-hidden="true">
+      GitHub
+    </a>
+  </div>
 </nav>
 
 <!-- ================= HERO ================= -->
@@ -735,8 +746,7 @@ footer{ padding:44px var(--edge) 40px; }
       </div>
     </div>
   </div>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'F1F21LLGU8');kofiwidget2.draw();</script> 
-  <footer>
+
     <div class="footer-row">
       <span>&copy; <span id="year"></span> REA4V&#8209;Lab</span>
       <span class="footer-clock"><span class="pip" style="animation:none;"></span> uptime <span id="clock">00:00:00</span></span>
